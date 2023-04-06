@@ -1,0 +1,160 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap";
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+:root {
+  --main-color: #f7c110;
+  --main-color-dark: #fa5514;
+  --ray-color: #f5de11;
+  --spark-color: #f59f1f;
+  --back-color: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--back-color);
+}
+
+main {
+  transition: 0.8s;
+  background: #0a0a0a;
+}
+main section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+}
+main section:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #0a0a0a, transparent);
+  z-index: 1;
+}
+main section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+main section .personaje {
+  top: 43%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section #text {
+  position: relative;
+  color: #fff;
+  font-size: 10vw;
+}
+main .sec {
+  position: relative;
+  min-height: 500px;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+main .sec .content {
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 100px;
+  padding-left: 25%;
+  padding-bottom: 20%;
+  padding-right: 25%;
+}
+main .sec .content h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #d4e948;
+}
+main .sec .content p {
+  font-size: 1.2em;
+  color: #f5f7f8;
+}
+main .sec .content p .parrafo {
+  display: flex;
+  justify-content: center;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+.loading-text span:nth-child(1) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}/*# sourceMappingURL=stylo.css.map */
